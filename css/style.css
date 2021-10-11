@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color:whitesmoke;
+    font-family: sans-serif ;
+    font-size: 10px;
+    margin: 50px;
+}
+
+#container {   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{ 
+    margin: 0px;
+    margin-top: 50px;
+    width: 100%;
+    min-width: 550px;
+    max-width: 600px;
+}
+
+.cardCollege {
+    border-radius: 5px;
+    border: 1px solid #e2e2e2;
+}
+
+
+.poster_college {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+}
+
+.arrowTail {
+    font-size: 13px;
+    position: relative;
+    right: 0px;
+    display: inline-block;
+    text-align: center;
+    background-color: rgb(78, 173, 202);
+    height: 36px;
+    margin-left: 100%;
+    padding: 0px 30px 0px 10px;
+    color: white;
+    font-weight: bolder;
+    transform: translate(-100%, -50%);
+}
+
+.arrowTail::before {
+    display: block;
+    content: "";
+    position: absolute;
+    border: 18px solid rgb(78, 173, 202);
+    border-color: rgb(78, 173, 202) rgb(78, 173, 202) rgb(78, 173, 202) transparent;
+    top: 0px;
+    left: -36px;
+}
+
+.ratingBox {
+    color: white;
+    margin: 2px;
+    width: 70px;
+    height: 50px;
+    background-color: rgb(233, 175, 68);
+    border-radius: 5px;
+    text-align: center;
+    position: absolute;
+    right: 10px;
+    font-size: 13px;
+    padding-top: 10px;
+}
+
+.rating {
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.posterFooter {
+    position: absolute;
+    bottom: 15px;   
+    font-size: 12px;
+    padding: 0px 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.posterFooter > div > span:nth-child(2) {
+    margin-left: 5px;
+}
+
+.tags {
+    padding: 5px 20px;
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 50px;
+}
+
+.ranking {
+    margin-left: auto;
+    font-weight: bold;
+}
+
+.cardFooter {
+    display: flex;
+    padding: 15px 10px;
+    box-shadow: 0px 2px 8px #e2e2e2;
+}
+
+.cardFooterLeft {
+    display: inline-block;
+    width: 70%;
+}
+
+.headingStar {
+    display: flex;
+}
+
+.headingStar h2 {
+    margin-top: 0px;
+}
+
+.star {
+    padding-left: 10px;
+}
+
+.fa {
+    margin-top: 5px;
+}
+.primary{
+    color: rgb(160, 159, 159);
+}
+
+.cardFooterRight {
+   margin-left: auto;
+}
+
+.originalFees {
+    color: rgb(85, 85, 85);
+    text-decoration: line-through;
+}
+
+.cardFooterRight > div {
+    text-align: right;
+}
+
+.cardFooterRight h1 {
+    color: crimson;
+}
+.discount {
+    font-size: 10px;
+    background-color: crimson;
+    position: relative;
+    padding: 3px 6px;
+    margin-left: 10px;
+    color: white;
+}
+
+.discount::before {
+    display: block;
+    content: "";
+    position: absolute;
+    border: 8px solid crimson;
+    border-color: transparent crimson transparent transparent;
+    top: 0px;
+    left: 0px;
+    transform: translateX(-100%);
+}
+
+.discount::after {
+    display: block;
+    content: "";
+    position: absolute;
+    border: 2px solid white;
+    border-radius: 50%;
+    z-index: 5;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.fontBackground{
+    padding: 3px 5px 3px 10px;
+    color: black;
+    background-color: rgb(150, 240, 240);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left: -10px;
+}
+
+.amenties {
+    color: darkcyan;
+}
+
+.fontBold {
+    font-weight: bolder;
+}
+
+.feesCycle {
+    margin-top: -15px;
+}
+
+.free {
+    margin-top: 15px;
+    font-weight: bolder;
+    font-size: 12px;
+}
