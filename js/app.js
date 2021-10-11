@@ -17,7 +17,7 @@ function makeCard(college) {
     card.querySelector('.discountedFees').innerHTML = "&#8377;" + college.discounted_fees
     card.querySelector('.feesCycle').innerText = college.fees_cycle
 
-    card.querySelector(".poster_college").style.backgroundImage = 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("https://learner-singh.github.io/img/' + college.image + '")'
+    card.querySelector(".poster_college").style.backgroundImage = 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("./img/' + college.image + '")'
 
     card.querySelector('.ranking').innerText = college.ranking
     var tags = card.querySelectorAll('.tags')
