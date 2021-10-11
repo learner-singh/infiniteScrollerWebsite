@@ -59,7 +59,7 @@ async function loadJson(resourceAdress) {
 }
 
 async function init() {
-    let collegeList = await loadJson("./../colleges.json")
+    let collegeList = await loadJson("/colleges.json")
     colleges = collegeList.colleges
     loadNextWindow()
 }
